@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+
+  <!-- Replace with your own title and description. -->
+  <title>Liu blog</title>
+  <meta name="description" content="so cool">
+
+  <!-- Default Theme (see https://docsify.js.org/#/themes) -->
+<link href="style/vue.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div id="app"></div>
+
+<script>
+  window.$docsify = {
+    loadSidebar: true,
+    search: 'auto',
+    subMaxLevel: 2,
+    alias: {
+      '/.*/sidebar.md': '/sidebar.md'
+    }
+      markdown: function(marked, renderer) {
+    // ...
+
+    return marked
+  }
+  }
+</script>
+
+  <!-- Required -->
+  <script src="style/docsify.min.js"></script>
+  <!-- 复制到剪贴板 -->
+<script src="style/docsify-copy-code.min.js"></script>
+  <!-- Recommended -->
+  <script src="style/zoom-image.min.js"></script>
+  <script src="style/search.js"></script>
+
+</body>
+</html>
